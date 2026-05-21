@@ -1,0 +1,165 @@
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Arial', sans-serif;
+        background-color: #0b0f19; 
+        color: #ffffff;
+        min-height: 150vh;
+    }
+    .barra {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        background-color: #f3b137; 
+        padding: 18px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .menu {
+        display: flex;
+        list-style: none;
+        gap: 35px;
+    }
+
+    .menu a {
+        color: #000000;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 16px;
+        transition: color 0.3s ease;
+    }
+
+    .menu a:hover {
+        color: white;
+    }
+
+    .banner {
+        text-align: center;
+        background-color: #05070c;
+        padding: calc(50px + 20px) 20px; 
+    }
+
+    .banner h1 {
+        font-size: 36px;
+        letter-spacing: 1px;
+        margin-bottom: 15px;
+        font-weight: bold;
+    }
+
+    .banner p {
+        color: #a0aab2;
+        font-size: 15px;
+    }
+
+    .galeria-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        padding: 40px 20px;
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+
+    .carta {
+        background-color: #121824; 
+        border-radius: 15px;
+        overflow: hidden;
+        width: 330px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+        transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    }
+
+    .carta:hover {
+        transform: translateY(-10px); 
+        box-shadow: 0 18px 30px orange;
+    }
+
+    .imagen-wrapper {
+        position: relative;
+        width: 100%;
+        aspect-ratio: 16 / 9; 
+        overflow: hidden;
+    }
+
+    .galeria-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; 
+        filter: grayscale(100%);
+        transition: filter 0.3s ease; 
+    }
+
+
+    .carta:hover .gallery-img {
+        filter: grayscale(0%); 
+    }
+
+
+    .badge {
+        position: absolute;
+        top: 15px;
+        right: 15px; 
+        padding: 6px 14px;
+        font-size: 11px;
+        font-weight: bold;
+        border-radius: 4px;
+        letter-spacing: 1px;
+        z-index: 10;
+    }
+
+    .eti.jedi {
+        background-color: #00bcd4; 
+        color: #000000;
+    }
+
+    .eti.sith {
+        background-color: #e91e63; 
+        color: #ffffff;
+    }
+
+
+    .carta-content {
+        padding: 22px;
+    }
+
+    .carta-content h3 {
+        font-size: 18px;
+        margin-bottom: 8px;
+        color: #ffffff;
+    }
+
+    .carta-content p {
+        font-size: 14px;
+        color: #9cb0c1;
+    }
+
+    .btn-scroll-top {
+        position: fixed;
+        bottom: 25px;
+        right: 25px;
+        z-index: 2000; 
+        background-color: #f3b137; 
+        color: #000000;
+        border: none;
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        font-size: 20px;
+        font-weight: bold;
+        cursor: pointer;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+        transition: transform 0.2s ease, background-color 0.2s ease;
+    }
+    .btn-scroll-top:hover {
+        transform: scale(1.1);
+        background-color: #db9b27;
+    }
